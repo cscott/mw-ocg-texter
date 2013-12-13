@@ -1,0 +1,56 @@
+#!/usr/bin/env node
+require('when/monitor/console'); // early debugging of promise errors
+
+var program = require('commander');
+var texter = require('../');
+
+program
+	.version(texter.version)
+	.usage('[options] <bundle.zip>')
+	.option('-o, --output <filename>',
+			'Save text to the given <filename>', null)
+	.option('-f, --fewer-newlines',
+			'Don\'t wrap; use newlines only to separate paragraphs')
+	.option('-v, --verbose',
+			'Print verbose progress information')
+	.option('-D, --debug',
+			'Turn on debugging features (eg, full stack traces on exceptions)');
+
+program.parse(process.argv);
+
+if (program.args.length === 0) {
+	console.error('A bundle filename is required.');
+	return 1;
+}
+if (program.args.length > 1) {
+	console.error('Too many arguments.');
+	return 1;
+}
+
+var bundlefile = program.args[0];
+
+var log = function() {
+	// en/disable log messages here
+	if (program.verbose || program.debug) {
+		console.error.apply(console, arguments);
+	}
+};
+
+var options = {
+	bundle: bundlefile,
+	fewer: program.fewerNewlines,
+	debug: !!program.debug,
+	output: program.output,
+	log: log
+};
+
+texter.convert(options).then(function(status) {
+	process.exit(status);
+}, function(err) {
+    if (program.debug && err.stack) {
+        console.error(err.stack);
+    } else {
+        console.error(err);
+    }
+    process.exit(1);
+}).done();
