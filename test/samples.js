@@ -20,7 +20,7 @@ describe("Basic crash test", function() {
 					assert.equal(statusCode, 0);
 				}).ensure(function() {
 					try {
-						fs.unlinkSync(filename + '.' + dest);
+						fs.unlinkSync(filename + '.txt');
 					} catch (e) { }
 				}).done(
 					function() { done(); },
