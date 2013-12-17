@@ -22,7 +22,8 @@
     "readable-stream": "~1.1.9",
     "sqlite3": "~2.1.19",
     "tmp": "~0.0.21",
-    "when": "~2.7.0"
+    "when": "~2.7.0",
+    "linewrap": "~0.2.1"
   },
   "devDependencies": {
     "mocha": "~1.15.1"

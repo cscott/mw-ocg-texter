@@ -38,7 +38,7 @@ var log = function() {
 
 var options = {
 	bundle: bundlefile,
-	fewer: program.fewerNewlines,
+	nowrap: program.fewerNewlines,
 	debug: !!program.debug,
 	output: program.output,
 	log: log
