@@ -9,8 +9,10 @@ program
 	.usage('[options] <bundle.zip>')
 	.option('-o, --output <filename>',
 			'Save text to the given <filename>', null)
-	.option('-f, --fewer-newlines',
+	.option('-w, --no-wrap',
 			'Don\'t wrap; use newlines only to separate paragraphs')
+	.option('-r, --no-refs',
+			'Suppress references (and other metadata sections)')
 	.option('-v, --verbose',
 			'Print verbose progress information')
 	.option('-D, --debug',
@@ -38,7 +40,8 @@ var log = function() {
 
 var options = {
 	bundle: bundlefile,
-	nowrap: program.fewerNewlines,
+	noWrap: !program.wrap,
+	noRefs: !program.refs,
 	debug: !!program.debug,
 	output: program.output,
 	log: log

@@ -41,10 +41,10 @@ bin/mw-ocg-texter -o out.txt us.zip
 
 The default format does 80-column word wrap.  If you would like to
 use "semantic" new lines (that is, newlines end paragraphs and there
-are no newlines within paragraphs) use the `--fewer-newlines`
+are no newlines within paragraphs) use the `--no-wrap`
 option:
 ```
-bin/mw-ocg-texter --fewer-newlines -o out.txt us.zip
+bin/mw-ocg-texter --no-wrap -o out.txt us.zip
 ```
 
 For other options, see:
