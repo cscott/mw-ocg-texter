@@ -26,7 +26,7 @@
     "linewrap": "~0.2.1"
   },
   "devDependencies": {
-    "mocha": "~1.15.1"
+    "mocha": "~1.16.1"
   },
   "bin": {
     "mw-ocg-texter": "./bin/mw-ocg-texter"
