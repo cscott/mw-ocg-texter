@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "cscott/mw-ocg-texter"
+    "url": "wikimedia/mediawiki-extensions-Collection-OfflineContentGenerator-text_renderer"
   },
   "keywords": [
     "wikitext",
