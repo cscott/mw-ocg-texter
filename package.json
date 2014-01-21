@@ -27,7 +27,7 @@
     "when": "~2.7.0"
   },
   "devDependencies": {
-    "mocha": "~1.16.1"
+    "mocha": "~1.17.0"
   },
   "bin": {
     "mw-ocg-texter": "./bin/mw-ocg-texter"
