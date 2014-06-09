@@ -1,9 +1,9 @@
 #!/usr/bin/env node
+require('es6-shim');
+require('prfun');
 
 var program = require('commander');
 var texter = require('../');
-
-var Promise = require('bluebird');
 
 program
 	.version(texter.version)
@@ -33,8 +33,6 @@ if (program.args.length > 1) {
 }
 
 var bundlefile = program.args[0];
-
-if (program.debug) { Promise.longStackTraces(); /* as soon as possible */ }
 
 var Syslog = program.syslog ? require('node-syslog') : {
 	init: function() { },
