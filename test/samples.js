@@ -20,7 +20,7 @@ describe("Basic crash test", function() {
 					log: function() { /* suppress logging */ }
 				}).then(function(statusCode) {
 					assert.equal(statusCode, 0);
-				}).ensure(function() {
+				}).finally(function() {
 					try {
 						fs.unlinkSync(filename + '.txt');
 					} catch (e) { }
