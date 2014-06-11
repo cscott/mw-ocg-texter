@@ -11,7 +11,7 @@ var texter = require('../');
 
 // ensure that we don't crash on any of our sample inputs
 describe("Basic crash test", function() {
-	['tao.zip', 'us.zip'].forEach(function(bundle) {
+	['tao.zip', 'us.zip', 'std_dev.zip'].forEach(function(bundle) {
 		describe(bundle, function() {
 			it('should compile to plaintext', function(done) {
 				this.timeout(0);
