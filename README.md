@@ -66,12 +66,12 @@ GPLv2
 [mw-ocg-bundler]: https://github.com/wikimedia/mediawiki-extensions-Collection-OfflineContentGenerator-bundler
 [mw-ocg-latexer]: https://github.com/wikimedia/mediawiki-extensions-Collection-OfflineContentGenerator-latex_renderer
 
-[NPM1]: https://nodei.co/npm/mw-ocg-texter.png
+[NPM1]: https://nodei.co/npm/mw-ocg-texter.svg
 [NPM2]: https://nodei.co/npm/mw-ocg-texter/
 
-[1]: https://travis-ci.org/cscott/mw-ocg-texter.png
+[1]: https://travis-ci.org/cscott/mw-ocg-texter.svg
 [2]: https://travis-ci.org/cscott/mw-ocg-texter
-[3]: https://david-dm.org/wikimedia/mediawiki-extensions-Collection-OfflineContentGenerator-text_renderer.png
+[3]: https://david-dm.org/wikimedia/mediawiki-extensions-Collection-OfflineContentGenerator-text_renderer.svg
 [4]: https://david-dm.org/wikimedia/mediawiki-extensions-Collection-OfflineContentGenerator-text_renderer
-[5]: https://david-dm.org/wikimedia/mediawiki-extensions-Collection-OfflineContentGenerator-text_renderer/dev-status.png
+[5]: https://david-dm.org/wikimedia/mediawiki-extensions-Collection-OfflineContentGenerator-text_renderer/dev-status.svg
 [6]: https://david-dm.org/wikimedia/mediawiki-extensions-Collection-OfflineContentGenerator-text_renderer#info=devDependencies
