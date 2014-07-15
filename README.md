@@ -32,10 +32,10 @@ some other source.
 
 ## Running
 
-To generate a plaintext file named `out.txt` from the `en` wikipedia article
-"United States":
+To generate a plaintext file named `out.txt` from the English
+(`enwiki`) wikipedia article "United States":
 ```
-mw-ocg-bundler -o us.zip --prefix en "United States"
+mw-ocg-bundler -o us.zip --prefix enwiki "United States"
 bin/mw-ocg-texter -o out.txt us.zip
 ```
 
