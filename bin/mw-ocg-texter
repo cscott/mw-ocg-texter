@@ -7,7 +7,7 @@ var texter = require('../');
 
 program
 	.version(texter.version)
-	.usage('[options] <bundle.zip>')
+	.usage('[options] <bundle_dir or bundle.zip>')
 	.option('-o, --output <filename>',
 			'Save text to the given <filename>', null)
 	.option('-w, --no-wrap',
@@ -24,7 +24,7 @@ program
 program.parse(process.argv);
 
 if (program.args.length === 0) {
-	console.error('A bundle filename is required.');
+	console.error('A bundle filename or directory is required.');
 	return 1;
 }
 if (program.args.length > 1) {
