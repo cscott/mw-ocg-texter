@@ -52,6 +52,11 @@ For other options, see:
 bin/mw-ocg-texter --help
 ```
 
+## Other ideas
+This backend should implement the [Unicode Nearly Plain-Text Encoding of
+Mathematics](http://unicode.org/notes/tn28/UTN28-PlainTextMath-v3.pdf)
+to render math content.
+
 ## Related Projects
 
 * [mw-ocg-bundler][]
