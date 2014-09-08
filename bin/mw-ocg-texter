@@ -18,6 +18,8 @@ program
 			'Print verbose progress information')
 	.option('-D, --debug',
 			'Turn on debugging features (eg, full stack traces on exceptions)')
+	.option('-T, --temporary-directory <dir>',
+			'Use <dir> for temporaries, not $TMPDIR or /tmp', null)
 	.option('--syslog',
 			'Log errors using syslog (for production deployments)');
 
@@ -61,6 +63,7 @@ var options = {
 	noRefs: !program.refs,
 	debug: !!program.debug,
 	output: program.output,
+	tmpdir: program.temporaryDirectory,
 	log: log
 };
 
