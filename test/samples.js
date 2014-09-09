@@ -20,8 +20,9 @@ describe("Basic crash test", function() {
 					bundle: filename,
 					output: filename + '.txt',
 					log: function() { /* suppress logging */ }
-				}).then(function(statusCode) {
-					assert.equal(statusCode, 0);
+				}).then(function(_) {
+					// should resolve with no value
+					assert.equal(_, undefined);
 				}).finally(function() {
 					try {
 						fs.unlinkSync(filename + '.txt');

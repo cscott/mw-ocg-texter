@@ -20,7 +20,6 @@
     "domino": "~1.0.17",
     "es6-shim": "~0.13.0",
     "linewrap": "~0.2.1",
-    "node-syslog": "~1.1.7",
     "prfun": "~1.0.0",
     "readable-stream": "~1.0.0",
     "sqlite3": "~2.2.3",
