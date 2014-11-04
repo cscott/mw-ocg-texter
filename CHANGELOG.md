@@ -1,3 +1,5 @@
+# mw-ocg-texter x.x.x (not yet released)
+
 # mw-ocg-texter 0.3.0 (2014-11-04)
 * Use new log and status reporting framework.
 * Update dependencies.
