@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-require('es6-shim');
-require('prfun');
+require('core-js/shim');
+var Promise = require('prfun');
 
 var program = require('commander');
 var texter = require('../');
