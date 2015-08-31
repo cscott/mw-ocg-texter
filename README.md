@@ -52,6 +52,16 @@ For other options, see:
 bin/mw-ocg-texter --help
 ```
 
+## Standalone mode
+To convert a single article without the bundle creation step, use:
+```
+bin/mw-ocg-texter -h en.wikipedia.org -t "United States"
+```
+The `-h` option specifies the hostname of the wiki, and the `-t`
+option gives the title to convert.  The content will be fetched
+from RESTBase and converted, with output to standard out (unless
+the `-o` option is given).
+
 ## Other ideas
 This backend should implement the [Unicode Nearly Plain-Text Encoding of
 Mathematics](http://unicode.org/notes/tn28/UTN28-PlainTextMath-v3.pdf)

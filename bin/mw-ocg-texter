@@ -20,11 +20,16 @@ program
 	.option('-D, --debug',
 			'Turn on debugging features (eg, full stack traces on exceptions)')
 	.option('-T, --temporary-directory <dir>',
-			'Use <dir> for temporaries, not $TMPDIR or /tmp', null);
+			'Use <dir> for temporaries, not $TMPDIR or /tmp', null)
+	.option('-h, --domain <domain name>',
+			'Wiki hostname to use to resolve the title [en.wikipedia.org]', null)
+	.option('-t, --title <title>',
+			'Don\'t use a bundle, download the given title instead.',
+			null);
 
 program.parse(process.argv);
 
-if (program.args.length === 0) {
+if (program.args.length === 0 && !program.title) {
 	console.error('A bundle filename or directory is required.');
 	return 1;
 }
@@ -73,7 +78,15 @@ var options = {
 	log: log
 };
 
-texter.convert(options).catch(function(err) {
+var p;
+if (!program.title) {
+	p = texter.convert(options);
+} else {
+	options.domain = program.domain || 'en.wikipedia.org';
+	options.title = program.title;
+	p = require('../lib/standalone').convert(options);
+}
+p.catch(function(err) {
 	var msg = {
 		type: 'log',
 		level: 'error'

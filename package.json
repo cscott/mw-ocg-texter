@@ -16,7 +16,7 @@
   ],
   "license": "GPL-2.0",
   "dependencies": {
-    "commander": "~2.5.0",
+    "commander": "~2.8.1",
     "core-js": "~0.9.1",
     "domino": "~1.0.17",
     "linewrap": "~0.2.1",
@@ -24,6 +24,9 @@
     "readable-stream": "~1.0.0",
     "sqlite3": "~3.0.8",
     "tmp": "~0.0.24"
+  },
+  "optionalDependencies": {
+      "mw-ocg-bundler": "wikimedia/mediawiki-extensions-Collection-OfflineContentGenerator-bundler#master"
   },
   "devDependencies": {
     "jshint": "~2.6.3",
