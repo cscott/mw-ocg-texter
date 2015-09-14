@@ -26,7 +26,7 @@
     "tmp": "~0.0.24"
   },
   "optionalDependencies": {
-      "mw-ocg-bundler": "wikimedia/mediawiki-extensions-Collection-OfflineContentGenerator-bundler#master"
+      "mw-ocg-bundler": "~0.3.0"
   },
   "devDependencies": {
     "jshint": "~2.6.3",
