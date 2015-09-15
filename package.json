@@ -26,7 +26,7 @@
     "tmp": "~0.0.24"
   },
   "optionalDependencies": {
-      "mw-ocg-bundler": "~0.3.0"
+      "mw-ocg-bundler": "~1.3.0"
   },
   "devDependencies": {
     "jshint": "~2.6.3",
