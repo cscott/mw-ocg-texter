@@ -21,7 +21,9 @@ program
 			'Turn on debugging features (eg, full stack traces on exceptions)')
 	.option('-T, --temporary-directory <dir>',
 			'Use <dir> for temporaries, not $TMPDIR or /tmp', null)
-	.option('-h, --domain <domain name>',
+	// this option can't be named 'domain' due to
+	// https://github.com/tj/commander.js/issues/370
+	.option('-h, --domainname <domain name>',
 			'Wiki hostname to use to resolve the title [en.wikipedia.org]', null)
 	.option('-t, --title <title>',
 			'Don\'t use a bundle, download the given title instead.',
@@ -82,7 +84,7 @@ var p;
 if (!program.title) {
 	p = texter.convert(options);
 } else {
-	options.domain = program.domain || 'en.wikipedia.org';
+	options.domain = program.domainname || 'en.wikipedia.org';
 	options.title = program.title;
 	p = require('../lib/standalone').convert(options);
 }
