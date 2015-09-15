@@ -1,3 +1,5 @@
+# mw-ocg-texter x.x.x (not yet released)
+
 # mw-ocg-texter 0.3.1 (2015-09-15)
 * Switch from es6-shim to core-js.
 * Support standalone mode for single-article conversion.
