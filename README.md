@@ -32,12 +32,16 @@ some other source.
 
 ## Running
 
-To generate a plaintext file named `out.txt` from the English
-(`enwiki`) wikipedia article "United States":
+To generate a plaintext file named `out.txt` from the `en.wikipedia.org` article
+"United States":
 ```
-mw-ocg-bundler -o us.zip --prefix enwiki "United States"
+$SOMEPATH/bin/mw-ocg-bundler -v -o us.zip -h en.wikipedia.org "United States"
 bin/mw-ocg-texter -o out.txt us.zip
 ```
+
+In the above command `$SOMEPATH` is the place you installed
+`mw-ocg-bundler`; if you've used the directory structure recommended
+by `mw-ocg-service` this will be `../mw-ocg-bundler`.
 
 The default format does 80-column word wrap.  If you would like to
 use "semantic" new lines (that is, newlines end paragraphs and there
