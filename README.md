@@ -85,7 +85,7 @@ GPLv2
 [mw-ocg-bundler]: https://github.com/wikimedia/mediawiki-extensions-Collection-OfflineContentGenerator-bundler
 [mw-ocg-latexer]: https://github.com/wikimedia/mediawiki-extensions-Collection-OfflineContentGenerator-latex_renderer
 
-[NPM1]: https://nodei.co/npm/mw-ocg-texter.svg
+[NPM1]: https://nodei.co/npm/mw-ocg-texter.png
 [NPM2]: https://nodei.co/npm/mw-ocg-texter/
 
 [1]: https://travis-ci.org/cscott/mw-ocg-texter.svg
